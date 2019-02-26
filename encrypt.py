@@ -14,7 +14,7 @@ PYPROTECT_EXT_NAME = ".pye"
 
 def wrap_entrance(root, modname, entrance_func):
     content = Template('''#!/usr/bin/env python
-import libpyprotect
+import libdaiwentest
 from _${modname} import ${entrance_func}
 
 if __name__ == '__main__':
