@@ -30,6 +30,9 @@ mkdir build
 cd build && cmake .. && make
 ```
 
+cmake -DPYBIND11_PYTHON_VERSION=2.7 ..
+
+
 And you can find ***libpyprotect.cpython-PYVERSION-PLATFORM.so*** in the objs directory.
 
 

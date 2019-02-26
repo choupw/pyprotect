@@ -80,10 +80,10 @@ def encrypt_tree(srcroot, entrances, destroot, excludes):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', help='Python source code root dir', required=True)
-    parser.add_argument('-e', help='Python project entrances, format "File1:Func1,File2:Func2,..."', required=True)
-    parser.add_argument('-o', help='Root dir for encrypted python files', default='encrypt_out')
-    parser.add_argument('--exclude', help='Source code files to be ignored, format "File1,File2"',)
+    parser.add_argument('-s', help='Python源码根目录', required=True)
+    parser.add_argument('-e', help='Python工程入口,格式例如 "test.py:main,test2.py:main,..."', required=True)
+    parser.add_argument('-o', help='加密后输入根目录，默认当前路径daiwen_out', default='daiwen_out')
+    parser.add_argument('--exclude', help='需要忽略加密的文件,格式样例 "a.py,b.py"',)
     args = parser.parse_args()
 
     srcroot = os.path.join(os.getcwd(), args.s)

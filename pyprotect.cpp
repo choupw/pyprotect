@@ -173,7 +173,11 @@ py::object ModFinder::modLoaderClass;
 py::object ModFinder::specFromFileLocation;
 
 
+<<<<<<< HEAD
 PYBIND11_MODULE(libdaiwentest, m) {
+=======
+PYBIND11_MODULE(libdaiwen, m) {
+>>>>>>> 3ac21e9e72fa59854110fca61c00dcce4c21bfa1
 #ifdef DEBUG
     puts("*** libpyprotect loaded ***");
 #endif
